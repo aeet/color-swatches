@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Great Vibes";
+  src: url("./assets/fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Pinyon Script";
+  src: url("./assets/fonts/PinyonScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Splash";
+  src: url("./assets/fonts/Splash-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("./assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+body {
+  background-color: hsla(0, 0%, 95%, 100%);
+  display: grid;
+  grid-template-columns: 22.5% auto 22.5%;
+  justify-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.paper {
+  position: relative;
+  min-width: 600px;
+  background: url("assets/images/women.jpg") no-repeat center / cover;
+  width: 100%;
+  padding: 50px;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  font-family: "BebasNeue";
+  font-size: 160px;
+  font-weight: 900;
+  color: hsla(50, 45%, 80%, 100%);
+  line-height: 1;
+  transform: scaleY(1.5);
+}
+
+.subtitle {
+  list-style-type: none;
+}
+
+.subtitle li:nth-child(odd) {
+  font-family: "Pinyon Script";
+  font-size: 56px;
+  color: hsla(50, 70%, 90%, 100%);
+}
+
+.subtitle li:nth-child(even) {
+  font-family: "Pinyon Script";
+  font-size: 32px;
+  color: hsla(50, 80%, 90%, 100%);
+}
