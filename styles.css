@@ -36,6 +36,7 @@ body {
 }
 
 .top {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-items: center;
@@ -60,5 +61,22 @@ body {
 .subtitle li:nth-child(even) {
   font-family: "Pinyon Script";
   font-size: 32px;
-  color: hsla(50, 80%, 90%, 100%);
+  color: hsla(50, 80%, 95%, 100%);
+}
+
+.colors {
+  color: white;
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  bottom: 0;
+  right: 0;
+}
+
+.color-block {
+  border-radius: 10px;
+  margin: -0.3rem;
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
 }
